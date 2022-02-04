@@ -1,0 +1,44 @@
+
+<!--This is a document type control statement-->
+<!DOCTYPE html>
+<!--opening tag-->
+<html lang="en">
+
+<!-- head give the main information fo the page-->
+<head>
+    <meta charset="UTF-8">
+<!--    use to configure the main viewport-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="....">
+    <!--    give a title to the webpage-->
+    <title>My first webpage</title>
+    <!--    here we need some css declaration to adjust the style-->
+    <style>
+        img {
+            width: 100px;
+            /*for a square img, if the radius is half of the width,we will fet a round img*/
+            border-radius: 50px;
+            /*push the elelment the left side*/
+            float: left;
+            /*add margin in different direction*/
+            margin-right: 10px;
+        }
+
+        /*with the .username, the style rule now only apply to p tag whose class is username*/
+        /*if you delete p, then the rules apply to any tags whose class is username */
+        p.username {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--    img is a tag without closing tag-->
+<!--the first element src give the source of the img-->
+<img src="img/img.png" alt="error">
+<p class="username">@BlueOrange</p>
+<p>I am a blue orange!</p>
+</body>
+
+<!--closing tag-->
+</html>
